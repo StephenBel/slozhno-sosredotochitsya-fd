@@ -2,8 +2,92 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--background-color);
+  color: var(--color);
+  padding: 10px;
+
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+  display: block;
+}
+
+header {
+  block-size: 668px;
+  background-image: url("../images/cover-image-dark.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  p {
+    color: #000028;
+    background-color: #FF0070;
+    font-weight: 700;
+
+  }
+  span {
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    right: 38px;
+    top: 10px;
+    color: #FF0070;
+  }
+  span:after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #FF0070;
+    position: absolute;
+    right: -19px;
+    top: 8px;
+    box-shadow: 0 0 4px 2px #FF0070;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 65px;
+  }
+}
+
+
+
+
+  button {
+    background-color: transparent;
+    color: #FF0070;
+    border: 0;
+    cursor: pointer;
+    padding: 0 13px;
+    border: 1px solid #FF0070;
+  }
+
+}
+
+h1 {
+  font-weight: 700px;
+  font-size: 116px;
+  color: #DB00FF;
+  text-shadow: 4px 4px #FF0070;
+  margin-bottom: 55px;
 }
 
 body {
-  
+
 }

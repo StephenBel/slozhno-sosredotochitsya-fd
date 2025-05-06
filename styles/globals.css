@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   font-size: 18px;
   font-family: "IBM Plex mono", sans-serif;
-
+  width: 100%;
 }
 
 h1,
