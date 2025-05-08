@@ -4,90 +4,192 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--background-color);
   color: var(--color);
-  padding: 10px;
 
+  background-image: url("../images/cover-image-dark.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-header::before {
+header::before,
+footer::before {
   content: "";
   position: absolute;
   top: 10px;
   right: 10px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid #FF0070;
-  border-right: 1px solid #FF0070;
+  border-top: 1px solid #ff0070;
+  border-right: 1px solid #ff0070;
+  display: block;
+}
+
+header::after,
+footer::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid #ff0070;
   display: block;
 }
 
 header {
   block-size: 668px;
-  background-image: url("../images/cover-image-dark.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  p {
-    color: #000028;
-    background-color: #FF0070;
-    font-weight: 700;
 
-  }
+  position: relative;
+  padding: 10px;
+
   span {
     text-transform: uppercase;
     font-weight: 400;
     position: absolute;
     right: 38px;
     top: 10px;
-    color: #FF0070;
+    color: #ff0070;
   }
   span:after {
     content: "";
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: #FF0070;
+    background-color: #ff0070;
     position: absolute;
     right: -19px;
     top: 8px;
-    box-shadow: 0 0 4px 2px #FF0070;
+    box-shadow: 0 0 4px 2px #ff0070;
   }
 
   nav {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: end;
-  
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 65px;
+    margin-block-end: 65px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 65px;
+    }
   }
-}
-
-
-
 
   button {
     background-color: transparent;
-    color: #FF0070;
+    color: #ff0070;
     border: 0;
     cursor: pointer;
     padding: 0 13px;
-    border: 1px solid #FF0070;
+    border: 1px solid transparent;
   }
+  .header__theme-menu-button_active {
+    border-color: #ff0070;
+  }
+  button:hover {
+    border-color: #ff006f66;
+  }
+
+  button:focus {
+    outline: 0;
+    border-bottom-color: #ff0070;
+  }
+
 
 }
 
 h1 {
   font-weight: 700px;
-  font-size: 116px;
-  color: #DB00FF;
-  text-shadow: 4px 4px #FF0070;
-  margin-bottom: 55px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: #db00ff;
+  text-shadow: 4px 4px var(--accent-color);
+  margin-block-end: 55px;
+  line-height: 83%;
 }
 
-body {
+h2 {
+  color: #ff0070;
+  font-size: 18px;
+  margin-block-end: 20px;
+}
 
+.title-decor {
+  color: #000028;
+  background-color: #ff0070;
+  font-weight: 700;
+  margin-block-end: 20px;
+}
+
+.subtitle-decor {
+  color: #000028;
+  background-color: #ff0070;
+  font-weight: 400;
+  margin-block-end: 10px;
+}
+
+p {
+  margin-block-end: 20px;
+}
+body {
+}
+.galery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+footer {
+  position: relative;
+  height: 100vh;
+  background-color: #000028;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h5 {
+    font-weight: 700px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    color: #db00ff;
+    text-shadow: 4px 4px var(--accent-color);
+    margin-block-end: 55px;
+    line-height: 83%;
+  }
+}
+main {
+  background-color: #000028;
+}
+a {
+  text-shadow: 2px 2px var(--accent-color);
+  text-decoration: none;
+  position: relative;
+  padding: 2px;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid;
+}
+
+a:focus::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  inset: 0;
+  border: 2px solid;
+}
+a:focus {
+  outline: 0;
+}
+
+
+section {
+  padding-right: 10px;
+  padding-left: 10px;
 }

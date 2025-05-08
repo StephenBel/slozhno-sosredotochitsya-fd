@@ -13,6 +13,7 @@ body {
   font-size: 18px;
   font-family: "IBM Plex mono", sans-serif;
   width: 100%;
+  line-height: 1.3;
 }
 
 h1,
@@ -42,4 +43,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+img {
+  width: 100%;
 }
