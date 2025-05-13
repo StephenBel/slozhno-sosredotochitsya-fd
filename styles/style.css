@@ -74,7 +74,7 @@ header {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin-top: 65px;
+      margin-block-start: 65px;
     }
   }
 
@@ -212,4 +212,50 @@ a:focus {
 section {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 20px;
+    padding-left: 0;
+    height: 1024px;
+
+    button {
+      height: 26px; 
+      /* перенести в основной */
+    }
+
+    h1 {
+      margin-block-end: 162px;
+      
+    }
+    .title-decor {
+      width: 364px;
+      margin-left: auto;
+    }
+  }
+  nav.header__theme-menu ul {
+    margin-block-start: 172px; 
+  }
+  nav.header__theme-menu {
+    margin-block-end: 173px;
+  }
+  /* можно убрать класс если перенести в хедер */
+/* .header__theme-menu-button {
+  padding: 0px 13px;
+
+} */
+header span {
+  right: 48px;
+  top: 20px;
+} 
+header:before {
+  right: 20px;
+  top: 20px;
+}
+header:after {
+  left: 20px;
+  bottom: 20px;
+}
+
 }

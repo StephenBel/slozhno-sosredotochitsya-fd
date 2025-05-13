@@ -14,7 +14,7 @@ body {
   font-family: "IBM Plex mono", sans-serif;
   width: 100%;
   line-height: 23.4px;
-  width: 375px;
+  width: 768px;
   /* text-wrap: balance; */
 }
 
@@ -49,3 +49,4 @@ a {
 img {
   width: 100%;
 }
+
