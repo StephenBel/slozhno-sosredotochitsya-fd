@@ -149,14 +149,17 @@ p {
   margin-block-end: 0;
 }
 .galery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  margin-block-start: 30px;
+  
+  margin-block-start: 50px;
   h3.title-decor {
-    margin-block-end: 0px;
+    margin-block-end: 10px;
   }
   padding-block-end: 40px;
+  .images {
+    display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  }
 }
 
 footer {
@@ -320,7 +323,8 @@ h2 {
   
 
   h3.title-decor {
-    margin-block-end: 10px;
+    margin-block-end: 20px;
+    margin-block-start: 0;
   }
   
 
@@ -367,7 +371,7 @@ footer:after {
 
     h1 {
       margin-block-end: 114px;
-      font-size: 157px;
+      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
       
     }
@@ -470,7 +474,7 @@ h2 {
   
 
   h3.title-decor {
-    margin-block-end: 10px;
+    margin-block-end: 20px;
   }
   
 
@@ -482,7 +486,7 @@ footer {
   /* padding: 10px; */
   h5 {
     transform: translateY(5px);
-    font-size: 157px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 footer:before {
