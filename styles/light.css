@@ -9,8 +9,33 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-color: #ffeff6;
+  --color: #353430;
+  --accent-color: #FF8DCB;
+  --accent-color-alpha: #35343066;
+  --title-color: #FFC2E6;
+  --image: url("../images/cover-image-light.png");
 }
 
 .theme-light .page {
+  /* background-image: url("../images/cover-image-light.png"); */
+  .title-decor, h4, h2 {
+    color: var(--color);
+  }
   /* Вам также нужно будет написать ряд подобных селекторов */
+  header button {
+    color: var(--color);
+  }
+  .header__theme-menu-button_active {
+    border-color: var(--color);
+  }
+  header span {
+    display: none;
+  }
+  header:before, header:after, footer:before, footer:after {
+    border-color: var(--color);
+  }
+  header button:focus {
+    border-bottom-color: var(--color);
+  }
 }
