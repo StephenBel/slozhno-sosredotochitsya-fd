@@ -20,7 +20,7 @@
   .title-decor, h4 {
     color: var(--background-color);
   }
-  h2 {
+  main h2 {
     color: var(--accent-color)
   }
   /* Вам также нужно будет написать ряд подобных селекторов */
