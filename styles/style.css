@@ -413,6 +413,9 @@ section {
   h2 {
     width: 315px;
   }
+  .how h3 {
+    margin-block-start: 0;
+  }
   /* .how {
     display: grid;
     grid-template-columns: auto 1fr;
