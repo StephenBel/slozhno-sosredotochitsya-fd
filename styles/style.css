@@ -39,8 +39,9 @@ footer::after {
 }
 
 header {
-  block-size: 668px;
-
+  /* block-size: 668px; */
+  min-height: 668px;
+  height: 100vh;
   position: relative;
   padding: 10px;
 
@@ -161,7 +162,9 @@ p {
 
 footer {
   position: relative;
-  height: 668px;
+  /* height: 668px; */
+  min-height: 668px;
+  height: 100vh;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -193,7 +196,7 @@ a:hover::after {
   bottom: 0;
   left: 0;
   right: 0;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 
 a:focus::after {
@@ -201,7 +204,7 @@ a:focus::after {
   position: absolute;
   bottom: -3px;
   inset: 0;
-  border: 2px solid;
+  border: 1px solid;
 }
 a:focus {
   outline: 0;
@@ -216,7 +219,9 @@ section {
   header {
     padding: 20px;
     padding-left: 0;
-    height: 1024px;
+    /* height: 1024px; */
+    min-height: 1024px;
+    height: 100vh;
 
     button {
       height: 26px;
@@ -315,7 +320,9 @@ section {
   }
   footer {
     margin-block-start: 60px;
-    height: 1024px;
+    /* height: 1024px; */
+    min-height: 1024px;
+    height: 100vh;
     /* padding: 10px; */
     h5 {
       transform: translateY(10px);
@@ -336,7 +343,8 @@ section {
   header {
     /* padding: 20px;
     padding-left: 0; */
-    height: 768px;
+    min-height: 768px;
+    height: 100vh;
     nav.header__theme-menu {
       justify-items: center;
       margin-inline-start: 20px;
@@ -450,7 +458,9 @@ section {
   }
   footer {
     /* margin-block-start: 60px; */
-    height: 768px;
+    /* height: 768px; */
+    min-height: 768px;
+  height: 100vh;
     /* padding: 10px; */
     h5 {
       transform: translateY(5px);

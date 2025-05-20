@@ -17,8 +17,11 @@
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   /* background-image: url("../images/cover-image-light.png"); */
-  .title-decor, h4, h2 {
+  .title-decor, h4 {
     color: var(--background-color);
+  }
+  h2 {
+    color: var(--accent-color)
   }
   /* Вам также нужно будет написать ряд подобных селекторов */
   header button {
