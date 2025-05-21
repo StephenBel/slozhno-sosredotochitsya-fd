@@ -116,6 +116,9 @@ h2 {
   margin-block-end: 20px;
   padding-block-start: 40px;
 }
+footer h2 {
+  padding-block-start: 0px;
+}
 
 h3 {
   font-size: 18px;
@@ -267,9 +270,13 @@ section {
     h2 {
       padding-block-start: 20px;
     }
+    /* h3.title-decor {
+      margin-block-start: 10px;
+    } */
   }
   .what {
     padding: 30px 20px;
+    padding-bottom: 10px;
   }
   h2 {
     width: 236px;
@@ -287,6 +294,10 @@ section {
   } */
   .galery {
     padding: 20px;
+
+    h2.title-decor {
+      margin-block-end: 20px;
+    }
 
     .images {
       display: grid;
@@ -328,6 +339,8 @@ section {
     /* padding: 10px; */
     h2.footer-heading {
       transform: translateY(10px);
+      padding-block-start: 0;
+      width: auto;
     }
   }
   footer:before {
@@ -415,6 +428,9 @@ section {
   }
   .how h3 {
     margin-block-start: 0;
+  }
+  .how h2 {
+    padding-block-start: 0;
   }
   /* .how {
     display: grid;
